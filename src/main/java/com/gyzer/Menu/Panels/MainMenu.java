@@ -77,7 +77,8 @@ public class MainMenu extends MenuDraw {
                             .addSinglePlaceHolder("members",""+guild.getMembers().size())
                             .addSinglePlaceHolder("maxmembers",""+maxmembers)
                             .addSinglePlaceHolder("date",guild.getDate())
-                            .addListPlaceHolder("intro",guild.getIntro());
+                            .addListPlaceHolder("intro",guild.getIntro())
+                            .addSinglePlaceHolder("guild",guild.getDisplay()+"");
                     menuItem.setItem(replace.startReplace(i,true,p.getName()));
                     return;
                 }
@@ -267,11 +268,11 @@ public class MainMenu extends MenuDraw {
                             return;
                         }
                         case "pvp" : {
-                            p.performCommand("legendaryguildremapped pvp");
+                            p.performCommand("guild pvp");
                             return;
                         }
                         case "chat" : {
-                            p.performCommand("legendaryguildremapped chat");
+                            p.performCommand("guild chat");
                             return;
                         }
                         case "home": {

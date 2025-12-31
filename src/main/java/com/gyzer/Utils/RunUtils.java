@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.logging.Level;
 
+
 public class RunUtils {
 
     private LegendaryGuild legendaryGuild = LegendaryGuild.getLegendaryGuild();
@@ -58,7 +59,10 @@ public class RunUtils {
                     break;
                 case "console":
                     if ((new Random()).nextInt(101) <= chance*100){
-                        Bukkit.dispatchCommand(Bukkit.getConsoleSender(),dealStr);
+//                        Bukkit.dispatchCommand(Bukkit.getConsoleSender(),dealStr);
+//                        Bukkit.getGlobalRegionScheduler().run(Bukkit.getPluginManager().getPlugin("LegendaryGuildRemapped"), task ->
+//                                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), dealStr)
+//                        );
                     }
                     break;
                 case "message":

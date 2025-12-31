@@ -86,8 +86,8 @@ public class LegendaryGuild extends JavaPlugin {
 
 
         Commands commands = new Commands();
-        Bukkit.getPluginCommand("LegendaryGuildRemapped").setExecutor(commands);
-        Bukkit.getPluginCommand("LegendaryGuildRemapped").setTabCompleter(commands);
+        Bukkit.getPluginCommand("guild").setExecutor(commands);
+        Bukkit.getPluginCommand("guild").setTabCompleter(commands);
 
         //检测周期
         sync(new Runnable() {
@@ -104,9 +104,9 @@ public class LegendaryGuild extends JavaPlugin {
 
         info("&aPlugin enabled. taking &e"+(System.currentTimeMillis() - time)+"ms.",Level.SEVERE);
 
-        Metrics metrics = new Metrics(this, 19359);
+//        Metrics metrics = new Metrics(this, 19359);
 
-        updateCheck();
+//        updateCheck();
     }
 
     private void updateCheck(){

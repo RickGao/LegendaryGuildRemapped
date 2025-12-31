@@ -4,7 +4,7 @@ import com.gyzer.Data.Guild.Guild;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
-import sun.dc.pr.PRError;
+//import sun.dc.pr.PRError;
 
 public class GuildHomeChangeEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
