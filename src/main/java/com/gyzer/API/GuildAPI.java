@@ -523,7 +523,8 @@ public class GuildAPI {
             return false;
         }
         //检测该职位是否人员达到上限
-        if (getGuildPositionAmount(guild,position) >= position.getMax()){
+        int max = position.getMax();
+        if (max > 0 && getGuildPositionAmount(guild,position) >= max){
             seter.sendMessage(lang.plugin+lang.admin_set_position_cant_max);
             return false;
         }
