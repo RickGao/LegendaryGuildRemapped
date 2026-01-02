@@ -1,6 +1,6 @@
 name: LegendaryGuildRemapped
 version: 6.0.8
-api-version: '1.12'
+api-version: '1.14'
 author: Gyzer, RickGao
 folia-supported: true
 main: com.gyzer.LegendaryGuild

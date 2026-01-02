@@ -37,13 +37,13 @@ public class NewCycleEvent implements Listener {
                 case 0: {
                     //刷新每日许愿
                     user.setWish(false);
-                    p.sendMessage(lang.plugin + lang.tree_wish_refresh);
+                    // p.sendMessage(lang.plugin + lang.tree_wish_refresh);
 
                     //神树水壶
                     WaterDataStore waterDataStore = user.getWaterDataStore();
                     waterDataStore.clearWaterDay();
                     user.setWaterDataStore(waterDataStore);
-                    p.sendMessage(lang.plugin + lang.tree_water_refresh);
+                    // p.sendMessage(lang.plugin + lang.tree_water_refresh);
 
                     //更新数据
                     user.update(false);
