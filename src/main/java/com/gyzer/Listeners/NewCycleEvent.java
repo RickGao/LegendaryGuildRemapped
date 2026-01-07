@@ -51,7 +51,7 @@ public class NewCycleEvent implements Listener {
                     //公会商店每日限购
                     data.refresh(ShopType.DAY);
                     data.update(false);
-                    p.sendMessage(lang.plugin + lang.shop_refresh_day);
+//                    p.sendMessage(lang.plugin + lang.shop_refresh_day);
                     break;
                 }
                 case 1: {
@@ -59,15 +59,15 @@ public class NewCycleEvent implements Listener {
                     //公会商店每周限购
                     data.refresh(ShopType.WEEK);
                     data.update(false);
-                    p.sendMessage(lang.plugin + lang.shop_refresh_week);
+//                    p.sendMessage(lang.plugin + lang.shop_refresh_week);
                     break;
                 }
                 case 2: {
 
-                    //公会商店每周限购
+                    //公会商店每月限购
                     data.refresh(ShopType.MONTH);
                     data.update(false);
-                    p.sendMessage(lang.plugin + lang.shop_refresh_month);
+//                    p.sendMessage(lang.plugin + lang.shop_refresh_month);
                     break;
                 }
             }
